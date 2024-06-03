@@ -8,25 +8,21 @@ export default function ContactList() {
           uid: 1,
           name: 'Aman Jain',
           status: 'Android Developer',
-          imageUrl: 'https://avatars.githubusercontent.com/u/11613311?v=4',
         },
         {
           uid: 2,
           name: 'Shekhar',
           status: 'IOS Developer',
-          imageUrl: 'https://avatars.githubusercontent.com/u/94738352?v=4',
         },
         {
           uid: 3,
           name: 'Zeeshan',
           status: 'Android Developer',
-          imageUrl: 'https://avatars.githubusercontent.com/u/29747452?v=4',
         },
         {
           uid: 4,
           name: 'Testing',
           status: 'Full Stack',
-          imageUrl: 'https://avatars.githubusercontent.com/u/25549847?v=4',
         },
       ];
   return (
@@ -36,12 +32,9 @@ export default function ContactList() {
       style={styles.container}
       scrollEnabled={false}
       >
-        {contacts.map(({uid, name, status, imageUrl}) => (
+        {contacts.map(({uid, name, status}) => (
             <View key={uid} style={styles.userCard}>
                 <Image
-                source={{
-                    uri: imageUrl
-                }}
                 style={styles.userImage}
                 />
                 <View>

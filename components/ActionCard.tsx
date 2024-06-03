@@ -18,9 +18,6 @@ export default function ActionCard() {
             </Text>
         </View>
         <Image
-        source={{
-            uri: 'https://images.pexels.com/photos/1261427/pexels-photo-1261427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-          }}
         style={styles.cardImage}
         />
         <View style={styles.bodyContainer} >
